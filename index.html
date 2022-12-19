@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rainfall Calculator</title>
+</head>
+<body>
+    <div class="container grid grid--app">
+        <div class="left--col">
+            <div class="app--container">
+                <div class="input--container">
+                <div class="title--container">
+                    <h1>RainVol App</h1>
+                </div>
+                <label for="area-sqft" id="area--title">Area sqft:</label>
+                <input type="text" id="area--sqft" placeholder="0"><br>
+                <label for="rainfall--in" id="rain--title">Rainfall inches:</label>
+                <input type="text" id="rainfall--in" placeholder="0"><br>
+                <button id="calculate--btn">calculate</button>
+                <button id="convert--btn">change to metric</button>
+                </div>
+                <div class="output--container">
+                    <div class="output--title">
+                        Total Rain Volume
+                    </div>
+                    <div id="rainfall--volume">
+                        0 gals
+                    </div>
+                    <!-- <a href="https://ucanr.edu/sites/MarinMG/files/186290.pdf" target="_blank"><button id="convert--btn">Volume H<sub>2</sub>O for my garden?</button></a>
+                    <a href="https://ucanr.edu/sites/MarinMG/files/186290.pdf" target="_blank"><button id="convert--btn">Volume H<sub>2</sub>O for me?</button></a> -->
+                </div>
+            </div>
+        </div>
+        <div class="right--col aboutRainVol">
+            <div class="faq active">
+                <h1 class="about--title">How to use this app: </h1>
+                <p>
+                    Enter the square footage (square meter if using metric) of the area you would like to calculate. Enter the inches of rainfall (cm if using metric) during a certain time period and hit calculate! The calculator will show the volume of water falling on that area!
+                </p>
+            </div>
+            <div class="faq faq--bigone">
+                <h1 class="about--title">Why should I care about rain?</h1>
+                <p>
+                    Rain is free! Even with a low amount of rainfall, you can collect alot of water! use this calculator to see how much water you could collect from your roof, shed, greenhouse or dedicated rain catchment surface! You can also use this calculator to see what size catchment you need for your requirements.
+                </p>
+            </div>
+            <div class="faq faq--big">
+                <h1 class="about--title">How much water does my garden need?</h1>
+                <p>
+                    A typical garden or lawn requires 1 inch of water per week, you can measure your garden or lawn area and use this calculator to determine how much water that is! Use a rain gauge as well so you don't over water!
+                </p>
+            </div>
+            <div class="faq faq--big">
+                <h1 class="about--title">How much water do my trees need?</h1>
+                <p>
+                    Mature trees can require alot of water, up to 10 gallons of water per inch of the tree's diameter! Younger trees and newly established trees require less, closer to 20 gallons total per week. Adding an organic mulch layer will help to coll the soil and retain water longer. Trees are resiliant and have deeper root systems than most plants and do not require frequent watering like garden plants or grass.
+                </p>
+            </div>
+            <div class="faq">
+                <h1 class="about--title">How much water do I need?</h1>
+                <p>
+                    The U.S. National Academies of Sciences, Engineering, and Medicine determined that an adequate daily fluid intake is: About 15.5 cups (0.97 gals, 3.7 liters) of fluids a day for men. About 11.5 cups (0.72 gals, 2.7 liters) of fluids a day for women.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
